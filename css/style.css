@@ -1,0 +1,70 @@
+/* BOX MODEL - nastavíme intuitivnější box model (border-box) */
+html { box-sizing: border-box; }
+*, *:after, *:before { box-sizing: inherit; }
+
+/*
+Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
+xs: (max-width: 575px)
+sm: (min-width: 576px) and (max-width: 767px)
+md: (min-width: 768px) and (max-width: 991px)
+lg: (min-width: 992px) and (max-width: 1199px)
+xl: (min-width: 1200px)
+
+Barvy
+růžová: #c5308a
+světle šedá: #f0f0f0, lora text
+*/
+
+/* --- pod tuto čáru piš svoje CSS --------------------------------------- */
+
+h1, h2, h3 {
+    font-weight: normal;
+    font-family: 'Lora', serif;
+    color: #c5308a;
+    font-style: italic
+}
+
+p {
+  font-family: 'Lora', serif;
+}
+
+a {
+  color: #c5308a !important;
+}
+
+#akce {
+  color: white;
+}
+
+.akce {
+  background-color: #c5308a;
+  color: white;
+  margin: auto 0px;
+  line-height: 1;
+  padding: 10px;
+}
+
+p.akce-text {
+  margin: auto 0px;
+  line-height: 1.5;
+}
+
+.kadernice {
+    border-style: dotted;
+    border-color: #c5308a;
+    border-width: 5px;
+}
+
+.pb-48 {
+  padding-bottom: 48px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .mt-56 {
+    margin-top: 56px;
+  }
+}
